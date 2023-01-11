@@ -367,3 +367,28 @@ table tbody td:first-child {
 table tbody tr{
     border-bottom: 1px solid #dee2e8;
 }
+
+.client{
+    display: flex;
+    align-items: center;
+}
+
+.client-img {
+    border: 2px solid #B0B0B0;
+    margin-right: 0.5rem;
+    height: 45px;
+    width: 45px;
+}
+.client-info h4 {
+    color: #555;
+    font-size: .95rem;
+}
+.client-info small {
+    color: #777;
+}
+
+.actions span {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
