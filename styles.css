@@ -319,6 +319,17 @@ input , button , select {
     margin-right: 0.8rem;
     color: #666;
 }
+.add button {
+    background: var(--main-color);
+    background: var(--main-color);
+    padding: 0 1rem;
+    color: #fff;
+    height: 37px;
+    border: none;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
 .browse input {
     width: 150px;
 
@@ -391,4 +402,39 @@ table tbody tr{
     display: inline-block;
     font-size: 1.5rem;
     margin-right: 0.5rem;
+}
+.paid{
+    display: inline-block;
+    text-align: center;
+    font-weight: 600;
+    background: #e5f8ed;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: .8rem;
+    color: var(--main-color);
+}
+
+#menu-toggle:checked ~ .side-bar {
+    width: 60px;
+}
+
+#menu-toggle:checked ~ .side-bar .side-header span {
+    display: none;
+}
+
+#menu-toggle:checked ~ .main-content {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+}
+
+#menu-toggle:checked ~ .main-content header {
+    left: 60px;
+}
+#menu-toggle:checked ~ .side-bar .profile ,
+#menu-toggle:checked ~ .side-bar .side-menu a small {
+    display: none;
+}
+
+#menu-toggle:checked ~ .side-bar .side-menu a span {
+    font-size: 1.3rem;
 }
