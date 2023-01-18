@@ -430,6 +430,7 @@ table tbody tr{
 #menu-toggle:checked ~ .main-content header {
     left: 60px;
 }
+
 #menu-toggle:checked ~ .side-bar .profile ,
 #menu-toggle:checked ~ .side-bar .side-menu a small {
     display: none;
@@ -437,4 +438,58 @@ table tbody tr{
 
 #menu-toggle:checked ~ .side-bar .side-menu a span {
     font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 1200px){
+    .analytics {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .analytics {
+        grid-template-columns: 100%;
+    }
+
+    .side-bar {
+        left: -165px;
+        z-index: 90;
+    }
+    header {
+        left: 0;
+        width: 100%;
+    }
+    .main-content {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    #menu-toggle:checked ~ .side-bar {
+        left: 0;
+    }
+
+    #menu-toggle:checked ~ .side-bar {
+        width: 165px;
+    }
+
+    #menu-toggle:checked ~ .side-bar .side-header span{
+        display: inline-block;
+    }
+
+    #menu-toggle:checked ~ .side-bar .profile ,
+    #menu-toggle:checked ~ .side-bar .side-menu a small {
+        display: block;
+    }
+
+    #menu-toggle:checked ~ .side-bar .side-menu a span {
+        font-size: 1.7rem;
+    }
+    #menu-toggle:checked ~ .main-content header {
+        left: 0px;
+    }
+    table {
+        width: 900px;
+    }
+
 }
